@@ -1,1 +1,128 @@
-<!doctype html><html lang="bg"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b0e15"><title>NYN Design — Галерия</title><meta name="description" content="Интерактивна галерия с 3D модели"><link rel="stylesheet" href="style.css?v=3"><script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script></head><body><header class="top"><a class="brand" href="./">◈ NYN<span>Design</span></a><nav><a href="#catalog">Каталог</a><a href="#about">За проекта</a></nav></header><main><section class="hero"><div class="eyebrow">ДИГИТАЛНА 3D ГАЛЕРИЯ</div><h1>Модели, които можеш<br><em>да разгледаш отвсякъде.</em></h1><p>Завърти, увеличи и разгледай всеки детайл директно в браузъра.</p><a class="cta" href="#catalog">Разгледай каталога ↗</a></section><section id="catalog" class="section"><div class="sectionhead"><div><div class="eyebrow">КОЛЕКЦИЯ</div><h2>3D модели</h2></div><div id="count" class="muted"></div></div><div id="grid" class="grid"></div></section><section id="about" class="about"><h2>За NYN Design</h2><p>Колекция от интерактивни триизмерни модели. Избери модел, за да го разгледаш от всички страни.</p></section></main><footer>© <span id="year"></span> NYN Design</footer><dialog id="viewerDialog"><div class="dialogHead"><div><h2 id="dialogTitle"></h2><p id="dialogDesc"></p></div><button id="closeDialog" class="close" aria-label="Затвори">✕</button></div><div id="viewerSlot"></div><p class="hint">🖱 Влачи за въртене · Скролирай за приближаване · Десен бутон за преместване</p></dialog><script src="models.js"></script><script src="app.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0e15">
+
+    <title>NYN Design — Галерия</title>
+
+    <meta name="description"
+          content="Интерактивна галерия с 3D модели">
+
+    <link rel="stylesheet" href="style.css?v=5">
+
+    <script
+        type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+    </script>
+</head>
+
+<body>
+
+    <!-- Горна навигация -->
+    <header class="top">
+        <a class="brand" href="./">
+            ◈ NYN<span>Design</span>
+        </a>
+
+        <nav>
+            <a href="#catalog">Каталог</a>
+            <a href="#about">За проекта</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Начална секция -->
+        <section class="hero">
+            <div class="eyebrow">
+                ДИГИТАЛНА 3D ГАЛЕРИЯ
+            </div>
+
+            <h1>
+                Модели, които можеш<br>
+                <em>да разгледаш отвсякъде.</em>
+            </h1>
+
+            <p>
+                Завърти, увеличи и разгледай всеки детайл
+                директно в браузъра.
+            </p>
+
+            <a class="cta" href="#catalog">
+                Разгледай каталога ↗
+            </a>
+        </section>
+
+        <!-- Каталог -->
+        <section id="catalog" class="section">
+
+            <div class="sectionhead">
+                <div>
+                    <div class="eyebrow">КОЛЕКЦИЯ</div>
+                    <h2>3D модели</h2>
+                </div>
+
+                <div id="count" class="muted"></div>
+            </div>
+
+            <div id="grid" class="grid"></div>
+
+        </section>
+
+        <!-- За проекта -->
+        <section id="about" class="about">
+
+            <h2>За NYN Design</h2>
+
+            <p>
+                Колекция от интерактивни триизмерни модели.
+                Избери модел, за да го разгледаш от всички страни.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Долен колонтитул -->
+    <footer>
+        © <span id="year"></span> NYN Design
+    </footer>
+
+    <!-- Прозорец за 3D модел -->
+    <dialog id="viewerDialog">
+
+        <div class="dialogHead">
+
+            <div>
+                <h2 id="dialogTitle"></h2>
+                <p id="dialogDesc"></p>
+            </div>
+
+            <button
+                id="closeDialog"
+                class="close"
+                aria-label="Затвори">
+                ✕
+            </button>
+
+        </div>
+
+        <div id="viewerSlot"></div>
+
+        <p class="hint">
+            🖱 Влачи за въртене ·
+            Скролирай за приближаване ·
+            Десен бутон за преместване
+        </p>
+
+    </dialog>
+
+    <!-- Зареждане на моделите -->
+    <script src="models.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
