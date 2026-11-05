@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#101010">
+
+    <meta name="theme-color" content="#171717">
 
     <title>NYN Design — 3D дизайн и изработка</title>
 
     <meta name="description"
           content="NYN Design — 3D дизайн, проектиране и изработка на персонализирани модели и изделия.">
 
-    <link rel="stylesheet" href="style.css?v=8">
+    <!-- Нов светъл дизайн -->
+    <link rel="stylesheet" href="style.css?v=9">
 
+    <!-- 3D визуализатор -->
     <script
         type="module"
         src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
@@ -25,7 +28,7 @@
     <!-- Горна навигация -->
     <header class="top">
 
-        <!-- Цялото лого -->
+        <!-- Цялото лого на NYN Design -->
         <a class="brand" href="./">
             <img
                 src="nyn-logo.png"
@@ -33,8 +36,8 @@
                 class="brand-full-logo">
         </a>
 
-        <!-- Меню -->
-        <nav>
+        <!-- Навигационно меню -->
+        <nav aria-label="Основна навигация">
             <a href="#catalog">Каталог</a>
             <a href="#about">За проекта</a>
         </nav>
@@ -66,32 +69,41 @@
 
         </section>
 
-        <!-- Каталог -->
+        <!-- Каталог с 3D модели -->
         <section id="catalog" class="section">
 
             <div class="sectionhead">
+
                 <div>
-                    <div class="eyebrow">НАШИТЕ ПРОЕКТИ</div>
+                    <div class="eyebrow">
+                        НАШИТЕ ПРОЕКТИ
+                    </div>
+
                     <h2>3D модели</h2>
                 </div>
 
                 <div id="count" class="muted"></div>
+
             </div>
 
+            <!-- Моделите се зареждат от app.js -->
             <div id="grid" class="grid"></div>
 
         </section>
 
-        <!-- За проекта -->
+        <!-- Информация за NYN Design -->
         <section id="about" class="about">
 
             <h2>За NYN Design</h2>
 
             <p>
                 NYN Design се занимава с 3D моделиране,
-                проектиране и изработка на персонализирани
-                изделия. Превръщаме идеите в реални
-                триизмерни модели и готови продукти.
+                инженерно проектиране и изработка на
+                персонализирани изделия.
+
+                Превръщаме идеите в реални триизмерни
+                модели и готови продукти с внимание
+                към всеки детайл.
             </p>
 
         </section>
@@ -104,7 +116,7 @@
         · 3D дизайн и изработка
     </footer>
 
-    <!-- Прозорец за 3D модел -->
+    <!-- Прозорец за разглеждане на 3D модел -->
     <dialog id="viewerDialog">
 
         <div class="dialogHead">
@@ -123,6 +135,7 @@
 
         </div>
 
+        <!-- Интерактивен 3D визуализатор -->
         <div id="viewerSlot"></div>
 
         <p class="hint">
@@ -133,7 +146,7 @@
 
     </dialog>
 
-    <!-- Зареждане на моделите -->
+    <!-- Зареждане на 3D моделите -->
     <script src="models.js"></script>
     <script src="app.js"></script>
 
