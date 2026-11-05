@@ -66,3 +66,198 @@ body {
 #about {
     scroll-margin-top: 95px;
 }
+
+/* ======================================
+   NYN DESIGN — ORANGE & GRAPHITE THEME
+   ====================================== */
+
+:root {
+    --bg: #101010;
+    --surface: #1c1c1c;
+    --surface-light: #252525;
+    --accent: #ff950f;
+    --accent-hover: #ffb13b;
+    --text: #f5f0e8;
+    --muted: #aaa7a1;
+
+    color: var(--text);
+    background: var(--bg);
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    padding-top: 78px;
+}
+
+/* Фиксирана стъклена навигация */
+html body header.top {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 78px;
+    width: 100%;
+    z-index: 9999;
+
+    background: rgba(18,18,18,.84) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid #ffffff18;
+    box-shadow: 0 5px 25px #0005;
+}
+
+/* Лого и меню */
+.brand {
+    color: var(--text);
+    font-weight: 900;
+    letter-spacing: .04em;
+}
+
+.brand span {
+    color: var(--accent);
+}
+
+.top nav a {
+    transition: color .2s;
+}
+
+.top nav a:hover {
+    color: var(--accent);
+}
+
+/* Начален екран */
+.hero {
+    padding: 125px 0 115px;
+    background:
+      radial-gradient(
+        ellipse at 85% 25%,
+        rgba(255,149,15,.13),
+        transparent 55%
+      );
+}
+
+.eyebrow {
+    color: var(--accent);
+}
+
+.hero h1 {
+    color: var(--text);
+}
+
+.hero h1 em {
+    color: var(--accent);
+}
+
+.hero p,
+.about p {
+    color: var(--muted);
+}
+
+/* Оранжев бутон */
+.cta {
+    background: var(--accent);
+    color: #141414;
+    border-radius: 9px;
+    transition: .25s;
+}
+
+.cta:hover {
+    background: var(--accent-hover);
+    transform: translateY(-3px);
+}
+
+/* Каталог */
+.tile {
+    background: var(--surface);
+    border: 1px solid #343434;
+    border-radius: 14px;
+    transition: .25s;
+}
+
+.tile:hover {
+    border-color: var(--accent);
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px #0007;
+}
+
+.thumb {
+    background:
+      radial-gradient(
+        circle at 50% 45%,
+        #383129,
+        #191919 75%
+      );
+}
+
+.tag {
+    color: var(--accent);
+}
+
+.tile h3 {
+    color: var(--text);
+}
+
+.tile p,
+.muted {
+    color: var(--muted);
+}
+
+/* Секция За проекта */
+.about {
+    border-top: 1px solid #343434;
+}
+
+footer {
+    background: #0c0c0c;
+    border-top: 1px solid #343434;
+}
+
+/* Прозорец за 3D модел */
+dialog {
+    background: #191919;
+    color: var(--text);
+    border: 1px solid #444;
+}
+
+#viewerSlot {
+    background:
+      radial-gradient(
+        circle,
+        #393127,
+        #171717 75%
+      );
+}
+
+.close {
+    background: #303030;
+    color: white;
+}
+
+.close:hover {
+    background: var(--accent);
+    color: #111;
+}
+
+/* Навигация до секции */
+#catalog,
+#about {
+    scroll-margin-top: 100px;
+}
+
+/* Мобилна версия */
+@media (max-width: 760px) {
+    .hero {
+        padding: 75px 0 85px;
+    }
+
+    .brand {
+        font-size: 19px;
+    }
+
+    .top nav {
+        gap: 12px;
+        font-size: 12px;
+    }
+}
