@@ -306,3 +306,266 @@ header.top .brand-full-logo {
         max-width: 170px;
     }
 }
+
+/* =========================================
+   NYN DESIGN — LIGHT THEME
+   Светъл сайт + тъмна навигация
+   ========================================= */
+
+:root {
+    --bg: #f8f7f3;
+    --surface: #ffffff;
+    --surface-light: #f0efeb;
+    --accent: #e98b14;
+    --accent-hover: #ffad3c;
+    --text: #222222;
+    --muted: #77736e;
+
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Основен фон */
+html,
+body {
+    background: #f8f7f3 !important;
+    color: #222222;
+}
+
+main {
+    background: #f8f7f3;
+}
+
+/* Тъмна горна лента */
+html body header.top {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 9999;
+
+    background: rgba(20,20,20,0.97) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid #333;
+    box-shadow: 0 4px 20px #0002;
+}
+
+/* Цялото лого */
+header.top .brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+header.top .brand-full-logo {
+    display: block;
+    width: auto;
+    height: 100px;
+    max-width: 260px;
+    object-fit: contain;
+}
+
+/* Меню */
+header.top nav a {
+    color: #f5f0e8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+header.top nav a:hover {
+    color: #ff9a16;
+}
+
+/* Начална секция */
+.hero {
+    background:
+        radial-gradient(
+            ellipse at 85% 20%,
+            rgba(233,139,20,0.09),
+            transparent 60%
+        ),
+        #f8f7f3 !important;
+
+    padding-top: 120px;
+    padding-bottom: 115px;
+}
+
+.hero h1 {
+    color: #222222 !important;
+}
+
+.hero h1 em {
+    color: #dc8212 !important;
+}
+
+.eyebrow {
+    color: #cf7910 !important;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.hero p {
+    color: #77736e !important;
+}
+
+/* Основен бутон */
+.cta {
+    background: #e98b14 !important;
+    color: #181818 !important;
+    border: 1px solid #e98b14;
+    border-radius: 9px;
+    box-shadow: 0 6px 18px #e98b1425;
+    transition: all 0.25s;
+}
+
+.cta:hover {
+    background: #ffad3c !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px #e98b1435;
+}
+
+/* Каталог */
+.section {
+    background: #f8f7f3;
+}
+
+.sectionhead h2,
+.about h2 {
+    color: #222222;
+}
+
+.muted {
+    color: #77736e;
+}
+
+/* Карти с 3D модели */
+.tile {
+    background: #ffffff !important;
+    border: 1px solid #e6e2dc !important;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 22px #00000008;
+    transition: all 0.25s;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+    border-color: #e98b14 !important;
+    box-shadow: 0 14px 32px #00000014;
+}
+
+.thumb {
+    background:
+        radial-gradient(
+            circle at center,
+            #ffffff,
+            #eeece7 80%
+        ) !important;
+}
+
+.tile h3 {
+    color: #242424 !important;
+}
+
+.tile p {
+    color: #77736e !important;
+}
+
+.tag {
+    color: #d17b11 !important;
+}
+
+/* За проекта */
+.about {
+    background: #f1efe9 !important;
+    border-top: 1px solid #e2ded6;
+}
+
+.about p {
+    color: #66635e !important;
+}
+
+/* Долен колонтитул */
+footer {
+    background: #191919 !important;
+    color: #bdb9b3 !important;
+    border-top: 1px solid #333;
+}
+
+/* 3D прозорец */
+dialog {
+    background: #ffffff !important;
+    color: #222222 !important;
+    border: 1px solid #dedbd5;
+    border-radius: 16px;
+}
+
+.dialogHead h2 {
+    color: #222222;
+}
+
+.dialogHead p,
+.hint {
+    color: #77736e;
+}
+
+#viewerSlot {
+    background:
+        radial-gradient(
+            circle,
+            #ffffff,
+            #eeece7 80%
+        ) !important;
+}
+
+.close {
+    background: #f0efeb;
+    color: #222222;
+}
+
+.close:hover {
+    background: #e98b14;
+    color: #111;
+}
+
+/* Отстояния за фиксираната навигация */
+body {
+    padding-top: 110px;
+}
+
+#catalog,
+#about {
+    scroll-margin-top: 125px;
+}
+
+/* Телефон */
+@media (max-width: 760px) {
+
+    html body header.top {
+        height: 90px;
+    }
+
+    body {
+        padding-top: 90px;
+    }
+
+    header.top .brand-full-logo {
+        height: 80px;
+        max-width: 155px;
+    }
+
+    .hero {
+        padding-top: 75px;
+        padding-bottom: 85px;
+    }
+
+    #catalog,
+    #about {
+        scroll-margin-top: 100px;
+    }
+}
